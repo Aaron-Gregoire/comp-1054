@@ -1,2 +1,88 @@
 @charset "UTF-8";
 
+/* Named Selector
+----------------------------------------------------------*/
+
+h2 {
+    color: red;
+    font-style: italic;
+}
+
+/* Id selector
+----------------------------------------------------------*/
+
+#project {
+    color: olive;
+}
+
+/* Class selector
+----------------------------------------------------------*/
+
+.about {
+    background-color: lightgray;
+}
+
+/* Contextual/Descendent selector
+----------------------------------------------------------*/
+
+section p {
+    color: darkorange;
+}
+
+.subproject p { 
+    color: darkblue;
+}
+
+/* Grouped selector
+----------------------------------------------------------*/
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+/* Psudoclass selector
+----------------------------------------------------------*/
+
+a:link {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+a:visited { 
+    color: red;
+}
+
+a:focus {
+    background-color: yellow;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: darkorange;
+}
+
+/* Structural Psudo-Class selectors
+----------------------------------------------------------*/
+
+li:nth-child(3n-1){
+    background-color: white;
+}
+
+li:nth-of-type(even) {
+    font-weight: bold;
+}
+
+article section:last-of-type {
+    background: lightblue;
+}
+
+/* Sibling and Psudoelement selector
+----------------------------------------------------------*/
+
+h1 + p::first-line {
+    text-transform: uppercase;
+}
