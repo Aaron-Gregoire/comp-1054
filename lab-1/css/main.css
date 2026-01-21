@@ -1,0 +1,54 @@
+/* Using your best judgement, decide whether any of the typefaces (headings, sub-headings, sub-sub-headings, and body text) in the original article might be close enough to a Web-safe font that is available on most platforms. */
+/* Decide whether one or more of the typefaces might be provided by a Web-font service (like Google Fonts) - then add the appropriate fonts using @import just below the CSS character encoding (@charset) at the top of the file. */
+/* Work together as a team to add a series of CSS selectors, properties, and values that render your page in a way that most closely resembles the original article. You cannot change any of the HTML inside the <body></body> tags - very important. */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Peta:wght@100..900&display=swap');
+
+
+html{
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    text-transform: uppercase;
+
+}
+
+header h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-align: left;
+    display: inline-block;
+    border-bottom:5px;
+    border-style: solid;
+    border-color:black;
+    border-width: thin; 
+       
+}
+
+header h2{
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+header p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 0.3rem;
+}
+
+h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+
+main{
+    column-count: 3;
+}
+
+main p {
+    hyphens: auto;
+
+}
