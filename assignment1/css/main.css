@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*box model*/
 html{
     box-sizing: border-box;
     font-size: 16px;
-    padding: 2rem;
-    background: gray;
 }
-/*fonts and line heights*/
+
+
 *,*::before, *::after{
     box-sizing: inherit;
 }
+/*basic styles*/
+html{
+    background: gray;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 1.6rem;
+    
     /*grid*/
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     margin: 0 auto;
     gap: 2rem;
+    padding: 2rem;
 }
-
-em{
-    font-weight: bold;
-}
-
+/*typeography*/
 h1, h2{
     font-family: "Metal Mania", system-ui;
     font-weight: bold;
     line-height: 1.2rem;
-    padding: 4px;
 }
 
 h1{
@@ -39,27 +41,61 @@ h1{
 
 h2{
     font-size: 1.5rem;
-    border: 5px solid black;
     display: inline-block;
     background: gray;
+    padding: 0.5rem;
 }
 
-p{
+p{ 
     margin-bottom: 1.5rem;
-    padding: 4px;
+}
+
+em{
+    font-weight: bold;
 }
 
 blockquote{
-    border: 5px solid black;
-    
+    font-style: italic; 
 }
 
+main{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+aside{
+    margin-bottom: 1.5rem; 
+    
+
 header{
-    text-align: center; 
-    border: 5px solid black;
-    background: rgb(95, 43, 43);
     margin-bottom: auto;  
 }
+
+footer{
+    font-weight: bold;
+    margin: auto;
+}
+
+/*all grouped styles*/
+h2, 
+blockquote, 
+header, 
+footer, 
+aside{
+    border: 5px solid black;
+}
+
+blockquote,
+header,
+footer,
+aside{
+    background: rgb(95, 43, 43);
+    text-align: center; 
+    border-radius: 1rem;
+}
+
+
+
 
 
 
