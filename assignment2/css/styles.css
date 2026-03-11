@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* layout */
+
+*{
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* body */
+
+body{
+    background-color: #f5f0e8;
+    color: #1a1a1a;
+    font-family: "Lora", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.65;
+}
