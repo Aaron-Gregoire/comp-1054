@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,900&family=Lora:ital@0;1&family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/* box */
+
+* {
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+
+/* container */
+
+#container {
+  width: 960px;
+  margin: 2rem auto;
+}
+
+
+/* header */
+
+header {
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding: 0.3rem 0;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header h1::before,
+header h1::after {
+  content: " | ";
+  color: #d4521a;
+  letter-spacing: 0;
+}
+
+
+/* srticle */
+
+article {
+  column-count: 3;
+  column-gap: 1.5rem;
+  column-rule: 1px solid #cccccc;
+}
+
+/* left column */
+
+article img {
+  display: block;
+  float: left;
+  width: 300px;
+  height: 260px;
+  margin-bottom: 0.6rem;
+}
+
+article h2:first-of-type {
+  float: left;
+  clear: left;
+  width: 300px;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
+}
+
+article p:first-of-type {
+  float: left;
+  clear: left;
+  width: 300px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+  padding-right: 1.5rem;
+  border-right: 1px solid #cccccc;
+}
+
+article p:first-of-type strong {
+  color: #d4521a;
+}
+
+/* q and a stuff */
+
+article h2 ~ h2 {
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0 0 0.15em;
+  break-after: avoid;
+}
+
+article h2 ~ p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  hyphens: auto;
+  margin: 0 0 0.8em;
+}
+
+
+/* quotes */
+
+q {
+  font-style: italic;
+}
+
+q::before { content: "\201C"; }
+q::after  { content: "\201D"; }
+
+abbr[title] {
+  cursor: help;
+}
+
+/* author name */
+
+article p:last-of-type {
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #555555;
+  text-align: right;
+  column-span: all;
+  clear: both;
+  margin-top: 1rem;
+  padding-top: 0.6em;
+  border-top: 1px solid #cccccc;
+}
+
+
+/* footer */
+
+footer {
+  border-top: 2px solid #1a1a1a;
+  padding: 0.4rem 0;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer small {
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+footer small em {
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
