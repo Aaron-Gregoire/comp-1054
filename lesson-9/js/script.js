@@ -54,4 +54,4 @@ pullQuote.forEach(function(element) {
     parentElem.prepend(clone);
 });
 // STEP 9a: Move this entire JavaScript into an external file and put it into the /js folder
-/* Animated scrolling of page to top func
+/* Animated scrolling of page to top function
