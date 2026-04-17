@@ -94,3 +94,95 @@ a {
 a:hover {
   color: #8b1a1a;
 }
+
+/* blockquote */
+
+blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  background-color: #f4e8c1;
+  border: 2px solid #c8a870;
+}
+
+blockquote::before {
+  content: "\275C";
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 3rem;
+  color: #8b1a1a;
+  opacity: 0.4;
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+/* lists */
+
+article ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+article ul li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+article ul li::before {
+  content: "\2736";
+  position: absolute;
+  left: 0;
+  color: #8b1a1a;
+}
+
+/* header */
+
+header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background-color: #1a0a02;
+  color: #e8d090;
+  border-bottom: 8px double #5a3a1a;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+header .container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* nav */
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #1a0a02;
+  border-bottom: 4px double #5a3a1a;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  color: #c9a032;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+  color: #f4e8c1;
+}
