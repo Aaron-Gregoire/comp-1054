@@ -37,3 +37,60 @@ ul, ol {
   list-style: none;
 }
 
+/* skip link */
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  padding: 0.8rem 1.2rem;
+  background: #8b1a1a;
+  color: #f4e8c1;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* typography */
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel Decorative', serif;
+  color: #5c0f0f;
+  line-height: 1.2;
+}
+
+h1 { 
+  font-size: 2.8rem; 
+}
+
+h2 { 
+  font-size: 2.2rem; 
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: 'Cinzel', serif;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-family: 'Cinzel', serif;
+  color: #3d200a;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  max-width: 70ch;
+}
+
+a {
+  color: #1a2c5b;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #8b1a1a;
+}
